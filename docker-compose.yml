@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  postgres_restaurant:
+    container_name: postgres_ifood_restaurant
+    image: postgres:12.2
+    environment:
+      POSTGRES_USER: restaurant
+      POSTGRES_PASSWORD: restaurant
+    ports:
+      - "5432:5432"
